@@ -8,7 +8,7 @@
 AndroidStudio
 ```
 ***
-
+# 内嵌
 权限获取使用了[com.github.arvinljw:PermissionHelper](https://github.com/arvinljw/PermissionHelper);
 
 媒体转码使用了[com.arthenica.mobileffmpeg.FFmpeg](https://github.com/arthenica/FFmpeg);
@@ -19,4 +19,5 @@ AndroidStudio
 
 如工程无法运行,请移步安装包的[下载链接](https://wwsi.lanzoum.com/ioSpV0xms1te),密码:4vju;
 
+# 其他
 如有问题,请联系QQ:2021334900
