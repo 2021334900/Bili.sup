@@ -1,0 +1,135 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:persistent="true">
+
+    <PreferenceCategory
+        android:persistent="true"
+        app:title="一些重要的(Something Important)">
+
+
+        <SwitchPreferenceCompat
+            android:persistent="true"
+            app:key="remind"
+            app:summaryOff="How many hours interval to remind you"
+            app:summaryOn="Please set the interval time"
+            app:title="间隔多少小时提醒我"
+            app:useSimpleSummaryProvider="true" />
+
+
+        <EditTextPreference
+            android:persistent="true"
+            app:defaultValue="1"
+            app:dependency="remind"
+            app:key="hour"
+            app:title="间隔时间(Interval hour)"
+            app:useSimpleSummaryProvider="true" />
+
+        <!--        <EditTextPreference-->
+        <!--            app:key="signature"-->
+        <!--            app:title="@string/signature_title"-->
+        <!--            app:useSimpleSummaryProvider="true" />-->
+        <SwitchPreferenceCompat
+            android:persistent="true"
+            app:defaultValue="false"
+            app:key="ch"
+            app:summaryOff="Be compatible with bilibili from Google Play (!!若您手机里没有国际版B站建议不要打开此项,会有不可预料的BUG)"
+            app:summaryOn="You are compatible with bilibili international edition"
+            app:title="兼容国际版B站(Non-Chinese mainland version)"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            android:persistent="true"
+            app:defaultValue="false"
+            app:dependency="ch"
+            app:key="play"
+            app:summaryOff="Play version only"
+            app:summaryOn="Now only the Play version is supported"
+            app:title="僅有Play版本"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            android:persistent="true"
+            app:defaultValue="false"
+            app:key="type"
+            app:summaryOff="custom video format"
+            app:summaryOn="You can choose the video format by yourself"
+            app:title="自定义转码格式"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:defaultValue=".mp4"
+            android:entries="@array/type_entries"
+            android:entryValues="@array/type_values"
+            android:key="typelist"
+            android:persistent="true"
+            android:title="视频格式(video format)"
+            app:dependency="type"
+            app:useSimpleSummaryProvider="true" />
+        <!--        <ListPreference-->
+        <!--            app:defaultValue="reply"-->
+        <!--            app:entries="@array/reply_entries"-->
+        <!--            app:entryValues="@array/reply_values"-->
+        <!--            app:key="reply"-->
+        <!--            app:title="@string/reply_title"-->
+        <!--            app:useSimpleSummaryProvider="true" />-->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="true"
+        app:title="杂项(Else)">
+
+        <SwitchPreferenceCompat
+            android:persistent="true"
+            app:defaultValue="true"
+            app:key="night"
+            app:summaryOff="Follow your phone night mode"
+            app:summaryOn="Follow your phone night mode"
+            app:title="跟随系统夜间模式(深色)"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            android:persistent="true"
+            app:defaultValue="true"
+            app:key="keepscreen"
+            app:summaryOff="Don't keep screen on"
+            app:summaryOn="Keep screen always on"
+            app:title="保持屏幕常亮(不息屏)"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            android:persistent="true"
+            app:defaultValue="true"
+            app:key="autoplay"
+            app:summaryOff="Autoplay with full screen(X)"
+            app:summaryOn="Autoplay with full screen(√)"
+            app:title="是否自动全屏播放"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            android:persistent="true"
+            app:defaultValue="true"
+            app:key="output"
+            app:summaryOff="Output video with delete it in this app"
+            app:summaryOn="Output video with delete it in this app"
+            app:title="导出视频时删除本应用下的视频"
+            app:useSimpleSummaryProvider="true" />
+        <!--        <SwitchPreferenceCompat-->
+        <!--            app:key="sync"-->
+        <!--            app:title="@string/sync_title" />-->
+
+        <!--        <SwitchPreferenceCompat-->
+        <!--            app:dependency="sync"-->
+        <!--            app:key="attachment"-->
+        <!--            app:summaryOff="@string/attachment_summary_off"-->
+        <!--            app:summaryOn="@string/attachment_summary_on"-->
+        <!--            app:title="@string/attachment_title" />-->
+        <!--
+                当这个按钮打开时,则第二个按钮也可以打开关闭,否则第二个按钮默认关闭
+                当按钮关闭时,显示@string/attachment_summary_off中的内容,打开时显示@string/attachment_summary_on中的内容
+        -->
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="注意!(Attention please!)">
+        <EditTextPreference
+            app:defaultValue="When you change it,Please restart the APP."
+            app:enabled="false"
+            app:title="当您更改过某项设置,请重启应用"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

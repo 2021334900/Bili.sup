@@ -1,0 +1,31 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+    <string-array name="type_entries">
+        <item>.mp4</item>
+        <item>.mkv</item>
+        <item>.avi</item>
+        <item>.rmvb</item>
+        <item>.3gp</item>
+        <item>.flv</item>
+    </string-array>
+
+    <string-array name="type_values">
+        <item>.mp4</item>
+        <item>.mkv</item>
+        <item>.avi</item>
+        <item>.rmvb</item>
+        <item>.3gp</item>
+        <item>.flv</item>
+    </string-array>
+
+</resources>
