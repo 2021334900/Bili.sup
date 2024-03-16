@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "Bili.sup.app-mergeDebugResources-23:/layout/activity_main.xml",
+        "source": "Bili.sup.app-main-26:/layout/activity_main.xml"
+    },
+    {
+        "merged": "Bili.sup.app-mergeDebugResources-23:/layout/activity_back_interface.xml",
+        "source": "Bili.sup.app-main-26:/layout/activity_back_interface.xml"
+    },
+    {
+        "merged": "Bili.sup.app-mergeDebugResources-23:/layout/activity_video.xml",
+        "source": "Bili.sup.app-main-26:/layout/activity_video.xml"
+    },
+    {
+        "merged": "Bili.sup.app-mergeDebugResources-23:/layout/activity_video_list.xml",
+        "source": "Bili.sup.app-main-26:/layout/activity_video_list.xml"
+    },
+    {
+        "merged": "Bili.sup.app-mergeDebugResources-23:/layout/list_item.xml",
+        "source": "Bili.sup.app-main-26:/layout/list_item.xml"
+    },
+    {
+        "merged": "Bili.sup.app-mergeDebugResources-23:/layout/settings_activity.xml",
+        "source": "Bili.sup.app-main-26:/layout/settings_activity.xml"
+    }
+]

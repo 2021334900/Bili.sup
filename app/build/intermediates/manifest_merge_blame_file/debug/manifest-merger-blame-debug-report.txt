@@ -1,0 +1,124 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:dist="http://schemas.android.com/apk/distribution"
+4    package="Bili.sup"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="26"
+9-->G:\rwtest\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="30" />
+10-->G:\rwtest\app\src\main\AndroidManifest.xml
+11
+12    <dist:module dist:instant="true" />
+12-->G:\rwtest\app\src\main\AndroidManifest.xml:7:5-40
+12-->G:\rwtest\app\src\main\AndroidManifest.xml:7:18-37
+13
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->G:\rwtest\app\src\main\AndroidManifest.xml:9:5-80
+14-->G:\rwtest\app\src\main\AndroidManifest.xml:9:22-77
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->G:\rwtest\app\src\main\AndroidManifest.xml:10:5-81
+15-->G:\rwtest\app\src\main\AndroidManifest.xml:10:22-78
+16    <!-- 申请写权限主要是为了兼容安卓10以下设备 -->
+17    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+17-->G:\rwtest\app\src\main\AndroidManifest.xml:12:5-14:40
+17-->G:\rwtest\app\src\main\AndroidManifest.xml:13:9-66
+18    <!-- 这是安卓10以上的写权限 -->
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->G:\rwtest\app\src\main\AndroidManifest.xml:16:5-68
+19-->G:\rwtest\app\src\main\AndroidManifest.xml:16:22-65
+20    <!-- 屏幕常亮权限 -->
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->G:\rwtest\app\src\main\AndroidManifest.xml:18:5-67
+21-->G:\rwtest\app\src\main\AndroidManifest.xml:18:22-64
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 网络权限,这里只用来加载视频封面,因为视频封面不在手机本地存储,在entry.json文件中保存 -->
+22-->[cn.jzvd:jiaozivideoplayer:7.7.0] C:\Users\woshi\.gradle\caches\transforms-3\9f861141d4c4441e45951fb13a495532\transformed\jetified-jiaozivideoplayer-7.7.0\AndroidManifest.xml:9:5-79
+22-->[cn.jzvd:jiaozivideoplayer:7.7.0] C:\Users\woshi\.gradle\caches\transforms-3\9f861141d4c4441e45951fb13a495532\transformed\jetified-jiaozivideoplayer-7.7.0\AndroidManifest.xml:9:22-76
+23    <application
+23-->G:\rwtest\app\src\main\AndroidManifest.xml:21:5-72:19
+24        android:allowBackup="false"
+24-->G:\rwtest\app\src\main\AndroidManifest.xml:22:9-36
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.5.0] C:\Users\woshi\.gradle\caches\transforms-3\58684d5194df925ccfbdfcd531cdebc6\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+26        android:debuggable="true"
+27        android:extractNativeLibs="true"
+27-->G:\rwtest\app\src\main\AndroidManifest.xml:23:9-41
+28        android:icon="@drawable/square"
+28-->G:\rwtest\app\src\main\AndroidManifest.xml:24:9-40
+29        android:label="Bili Sup"
+29-->G:\rwtest\app\src\main\AndroidManifest.xml:25:9-33
+30        android:roundIcon="@drawable/circle"
+30-->G:\rwtest\app\src\main\AndroidManifest.xml:26:9-45
+31        android:supportsRtl="true"
+31-->G:\rwtest\app\src\main\AndroidManifest.xml:27:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+33-->G:\rwtest\app\src\main\AndroidManifest.xml:28:9-68
+34
+35        <!-- android:allowBackup="false" -->
+36        <!-- 是否支持程序备份 -->
+37        <!-- android:extractNativeLibs="true" -->
+38        <!-- true输出APK时压缩,但是安装后较大,false输出APK时不压缩,安装后较小,各有利弊 -->
+39        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar" -->
+40        <!-- 隐藏标题栏,但是和黑暗模式不匹配,只要有黑暗模式,就不可以隐藏标题栏 -->
+41        <!-- android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" -->
+42        <!-- 设置成可以白色黑暗变换的主题,但是无法隐藏标题栏,同上反义 -->
+43        <!-- android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" -->
+44        <!-- 兼具上述两种情况 -->
+45        <!-- android:preserveLegacyExternalStorage="true" -->
+46        <!-- android:requestLegacyExternalStorage="true" -->
+47        <!-- 不启用安卓11之后的沙盒存储 -->
+48
+49        <activity
+49-->G:\rwtest\app\src\main\AndroidManifest.xml:44:9-47:62
+50            android:name="Bili.sup.Setting"
+50-->G:\rwtest\app\src\main\AndroidManifest.xml:45:13-44
+51            android:exported="false"
+51-->G:\rwtest\app\src\main\AndroidManifest.xml:46:13-37
+52            android:label="@string/title_activity_setting" />
+52-->G:\rwtest\app\src\main\AndroidManifest.xml:47:13-59
+53        <activity
+53-->G:\rwtest\app\src\main\AndroidManifest.xml:48:9-51:40
+54            android:name="Bili.sup.Video"
+54-->G:\rwtest\app\src\main\AndroidManifest.xml:49:13-42
+55            android:configChanges="orientation|screenSize|keyboardHidden"
+55-->G:\rwtest\app\src\main\AndroidManifest.xml:50:13-74
+56            android:exported="false" />
+56-->G:\rwtest\app\src\main\AndroidManifest.xml:51:13-37
+57        <!-- 横向模式 -->
+58        <!-- android:screenOrientation="landscape" /> -->
+59
+60        <activity
+60-->G:\rwtest\app\src\main\AndroidManifest.xml:55:9-57:39
+61            android:name="Bili.sup.VideoList"
+61-->G:\rwtest\app\src\main\AndroidManifest.xml:56:13-46
+62            android:exported="true" />
+62-->G:\rwtest\app\src\main\AndroidManifest.xml:57:13-36
+63        <activity
+63-->G:\rwtest\app\src\main\AndroidManifest.xml:59:9-61:40
+64            android:name="Bili.sup.BackInterface"
+64-->G:\rwtest\app\src\main\AndroidManifest.xml:60:13-50
+65            android:exported="false" />
+65-->G:\rwtest\app\src\main\AndroidManifest.xml:61:13-37
+66        <activity
+66-->G:\rwtest\app\src\main\AndroidManifest.xml:63:9-70:20
+67            android:name="Bili.sup.MainActivity"
+67-->G:\rwtest\app\src\main\AndroidManifest.xml:64:13-49
+68            android:exported="true" >
+68-->G:\rwtest\app\src\main\AndroidManifest.xml:65:13-36
+69            <intent-filter>
+69-->G:\rwtest\app\src\main\AndroidManifest.xml:66:13-69:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->G:\rwtest\app\src\main\AndroidManifest.xml:67:17-69
+70-->G:\rwtest\app\src\main\AndroidManifest.xml:67:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->G:\rwtest\app\src\main\AndroidManifest.xml:68:17-77
+72-->G:\rwtest\app\src\main\AndroidManifest.xml:68:27-74
+73            </intent-filter>
+74        </activity>
+75    </application>
+76
+77</manifest>

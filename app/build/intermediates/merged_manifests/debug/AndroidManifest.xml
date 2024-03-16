@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="Bili.sup"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="30" />
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 申请写权限主要是为了兼容安卓10以下设备 -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <!-- 这是安卓10以上的写权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 屏幕常亮权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 网络权限,这里只用来加载视频封面,因为视频封面不在手机本地存储,在entry.json文件中保存 -->
+    <application
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="true"
+        android:icon="@drawable/square"
+        android:label="Bili Sup"
+        android:roundIcon="@drawable/circle"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+
+        <!-- android:allowBackup="false" -->
+        <!-- 是否支持程序备份 -->
+        <!-- android:extractNativeLibs="true" -->
+        <!-- true输出APK时压缩,但是安装后较大,false输出APK时不压缩,安装后较小,各有利弊 -->
+        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar" -->
+        <!-- 隐藏标题栏,但是和黑暗模式不匹配,只要有黑暗模式,就不可以隐藏标题栏 -->
+        <!-- android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" -->
+        <!-- 设置成可以白色黑暗变换的主题,但是无法隐藏标题栏,同上反义 -->
+        <!-- android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" -->
+        <!-- 兼具上述两种情况 -->
+        <!-- android:preserveLegacyExternalStorage="true" -->
+        <!-- android:requestLegacyExternalStorage="true" -->
+        <!-- 不启用安卓11之后的沙盒存储 -->
+
+        <activity
+            android:name="Bili.sup.Setting"
+            android:exported="false"
+            android:label="@string/title_activity_setting" />
+        <activity
+            android:name="Bili.sup.Video"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false" />
+        <!-- 横向模式 -->
+        <!-- android:screenOrientation="landscape" /> -->
+
+        <activity
+            android:name="Bili.sup.VideoList"
+            android:exported="true" />
+        <activity
+            android:name="Bili.sup.BackInterface"
+            android:exported="false" />
+        <activity
+            android:name="Bili.sup.MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,8 @@
+Bili.sup.test.app-jetified-core-1.1.0-0 C:\Users\woshi\.gradle\caches\transforms-3\9ce83772e343123bc150802d59928146\transformed\jetified-core-1.1.0\res
+Bili.sup.test.app-androidTest-1 G:\rwtest\app\build\generated\res\resValues\androidTest\debug
+Bili.sup.test.app-androidTest-2 G:\rwtest\app\build\generated\res\rs\androidTest\debug
+Bili.sup.test.app-mergeDebugAndroidTestResources-3 G:\rwtest\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+Bili.sup.test.app-mergeDebugAndroidTestResources-4 G:\rwtest\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+Bili.sup.test.app-merged_res-5 G:\rwtest\app\build\intermediates\merged_res\debugAndroidTest
+Bili.sup.test.app-androidTest-6 G:\rwtest\app\src\androidTest\res
+Bili.sup.test.app-androidTestDebug-7 G:\rwtest\app\src\androidTestDebug\res

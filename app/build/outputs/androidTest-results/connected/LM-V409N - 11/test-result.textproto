@@ -1,0 +1,68 @@
+# 2024-03-16T10:27:46.490Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "ExampleInstrumentedTest"
+    test_package: "Bili.sup"
+    test_method: "useAppContext"
+    start_time {
+      seconds: 1710584864
+      nanos: 926000000
+    }
+    end_time {
+      seconds: 1710584864
+      nanos: 964000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "G:\\rwtest\\app\\build\\outputs\\androidTest-results\\connected\\LM-V409N - 11\\logcat-Bili.sup.ExampleInstrumentedTest-useAppContext.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "G:\\rwtest\\app\\build\\outputs\\androidTest-results\\connected\\LM-V409N - 11\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "G:\\rwtest\\app\\build\\outputs\\androidTest-results\\connected\\LM-V409N - 11\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "G:\\rwtest\\app\\build\\outputs\\androidTest-results\\connected\\LM-V409N - 11\\cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "G:\\rwtest\\app\\build\\outputs\\androidTest-results\\connected\\LM-V409N - 11\\testlog\\test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}
