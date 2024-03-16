@@ -11,6 +11,6 @@
 
 视频播放使用了[cn.jzvd:jiaozivideoplayer](https://github.com/Jzvd/JZVideo);
 
-如工程无法运行,请移步安装包的[下载链接](https://wwsi.lanzoum.com/ioSpV0xms1te)密码:4vju;
+如工程无法运行,请移步安装包的[下载链接](https://wwsi.lanzoum.com/ioSpV0xms1te),密码:4vju;
 
 如有问题,请联系QQ:2021334900
