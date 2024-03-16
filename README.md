@@ -6,7 +6,7 @@
 ***
 # 环境
 ```
-AndroidStudio
+Android Studio
 ```
 ***
 # 内嵌
